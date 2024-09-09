@@ -1,0 +1,88 @@
+.feedback {
+  container-type: inline-size;
+
+  &__wrapper {
+    background-image: image-set(
+      url('/src/resources/images/feedback-page/clouds@1X.png') 1x,
+      url('/src/resources/images/feedback-page/clouds@2X.png') 2x,
+      url('/src/resources/images/feedback-page/clouds@1X.webp') 1x,
+      url('/src/resources/images/feedback-page/clouds@2X.webp') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: -550px 0;
+  }
+
+  &__content {
+    display: flex;
+    gap: 2.5vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 2.5vw 100px;
+  }
+
+  &__contacts-info {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__cont-email,
+  &__cont-phone {
+    margin: 0;
+    margin-bottom: 2.6vw;
+    font-size: clamp(35px, 5.3vw, 66px);
+    line-height: 0.9;
+  }
+
+  &__cont-phone {
+    margin-bottom: 0;
+  }
+
+  &__section-header {
+    margin-bottom: 5.3vw;
+    font-size: clamp(75px, 10.7vw, 130px);
+    line-height: 0.9;
+  }
+
+  @container (width <= 1000px) {
+    &__content {
+      flex-direction: column;
+      max-width: max-content;
+    }
+
+    &__section-header {
+      display: none;
+    }
+  }
+
+  @media only screen and (orientation: portrait) {
+    &__section-header {
+      display: none;
+    }
+
+    &__content {
+      flex-direction: column;
+      max-width: fit-content;
+      margin: 0 auto;
+      margin-top: 53px;
+      padding: 0;
+      padding-bottom: 33px;
+    }
+
+    &__contacts-info {
+      align-self: center;
+    }
+
+    &__cont-email,
+    &__cont-phone {
+      margin-bottom: 13px;
+      font-size: clamp(24px, 5vw, 60px);
+    }
+
+    &__cont-phone {
+      margin-bottom: 0;
+    }
+  }
+}

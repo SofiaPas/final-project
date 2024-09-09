@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sofia Pasechnik" />
+    <link rel="icon" href="src/resources/images/favicon-icon.png" />
+    <link rel="stylesheet" href="src/resources/scss/style.scss" />
+    <title>Final Project</title>
+  </head>
+  <body class="body">
+    <section class="header">
+      <div class="header__wrapper">
+        <div class="header__content">
+          <div class="header__main-menu">
+            <a href="#">
+              <picture class="header__logo-box">
+                <source
+                  srcset="src/resources/images/head-page/logo-img.webp"
+                  type="image/webp"
+                  class="header__logo"
+                />
+                <img
+                  src="src/resources/images/head-page/logo-img.png"
+                  alt="Logo"
+                  width="159"
+                  height="104"
+                  loading="eager"
+                  class="header__logo"
+                />
+              </picture>
+            </a>
+            <nav class="header__navbar">
+              <input
+                type="checkbox"
+                id="nav-list-toggle"
+                class="header__nav-list_checkbox"
+              />
+              <label for="nav-list-toggle" class="header__nav-toggle">
+                ☰
+              </label>
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a class="base-link header__nav-link" href="#about">About</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="base-link header__nav-link" href="#services"
+                    >Services</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a class="base-link header__nav-link" href="#founder"
+                    >Founder</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a class="base-link header__nav-link" href="#feedback"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__lower-part">
+            <h1 class="base-title header__title">Cloud software development</h1>
+            <div class="header__features-block">
+              <img
+                src="src/resources/images/head-page/check-mark.svg"
+                alt="check-mark"
+                width="24"
+                height="24"
+                class="header__check-mark"
+              />
+              <img
+                src="src/resources/images/head-page/check-mark.svg"
+                alt="check-mark"
+                width="24"
+                height="24"
+                class="header__check-mark"
+              />
+              <img
+                src="src/resources/images/head-page/check-mark.svg"
+                alt="check-mark"
+                width="24"
+                height="24"
+                class="header__check-mark"
+              />
+              <ul class="header__features-list">
+                <li class="header__feature-item">
+                  Websites, mobile applications
+                </li>
+                <li class="header__feature-item">Remote development teams</li>
+                <li class="header__feature-item">
+                  Cloud Infrastructure Management
+                </li>
+              </ul>
+            </div>
+            <a href="#requestForm">
+              <button class="base-btn header__btn" type="button">
+                Send a request
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__content">
+        <div class="about__image-container">
+          <div class="about__image"></div>
+        </div>
+        <div class="about__wrapper">
+          <h1 class="base-title about__title">
+            Basic marketing information
+            <span class="green-part">about the company</span>
+          </h1>
+          <p class="about__main-text">
+            Basic marketing info about the company: We deliver customized cloud
+            based solutions for your ideas. 20 years of high performance cloud
+            based development experience (that’s my experience incl. Google and
+            Gemini).
+          </p>
+          <a href="#requestForm" class="about__btn-container">
+            <button class="base-btn about__btn" type="button">
+              Send a request
+            </button>
+          </a>
+          <picture class="about__decor-wrapper">
+            <source
+              srcset="src/resources/images/about-us-page/Frame-mobile.svg"
+              media="(orientation: portrait)"
+              type="image/svg+xml"
+              class="about__decor-element"
+            />
+            <img
+              src="src/resources/images/about-us-page/Frame.svg"
+              width="497"
+              height="236"
+              alt=""
+              class="about__decor-element"
+            />
+            <img
+              src="src/resources/images/about-us-page/Frame2.svg"
+              width="497"
+              height="236"
+              alt=""
+              class="about__decor-element"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services__content">
+        <div class="services__animation-container"></div>
+        <div class="services__wrapper">
+          <h1 class="base-title services__section-header">Services</h1>
+          <picture class="services__decor-wrapper">
+            <source
+              srcset="src/resources/images/services-page/frame-mobile.svg"
+              media="(orientation: portrait)"
+              type="image/svg+xml"
+              class="services__decor-element"
+            />
+            <img
+              src="src/resources/images/services-page/Frame.svg"
+              alt=""
+              width="493"
+              height="366"
+              class="services__decor-element"
+            />
+          </picture>
+        </div>
+        <ul class="services__serv-list">
+          <li class="services__card-box">
+            <div class="services__card">
+              <img
+                src="src/resources/images/services-page/Data.svg"
+                alt="Database img"
+                width="48"
+                height="48"
+                class="services__card-img"
+                loading="lazy"
+              />
+              <h2 class="base-title services__card-title">
+                Cloud based development
+              </h2>
+              <p class="services__card-descr">
+                Develop an app for your project: web and mobile apps for your
+                custom business needs on Amazon Web Services, Google Cloud
+                Platform or your private cloud.
+              </p>
+              <a href="#requestForm">
+                <button class="base-btn services__btn" type="button">
+                  Send a request
+                </button>
+              </a>
+            </div>
+          </li>
+
+          <li class="services__card-box">
+            <div class="services__card">
+              <img
+                src="src/resources/images/services-page/Window-code-block.svg"
+                alt="Database img"
+                width="48"
+                height="48"
+                class="services__card-img"
+                loading="lazy"
+              />
+              <h2 class="base-title services__card-title">
+                Remote development teams
+              </h2>
+              <p class="services__card-descr">
+                Manage and improve your services with a dedicated development
+                team that covers all functions. You only need to define the
+                tasks and priorities, we are doing the rest.
+              </p>
+              <a href="#requestForm">
+                <button class="base-btn services__btn" type="button">
+                  Send a request
+                </button>
+              </a>
+            </div>
+          </li>
+
+          <li class="services__card-box">
+            <div class="services__card">
+              <img
+                src="src/resources/images/services-page/Clock.svg"
+                alt="Database img"
+                width="48"
+                height="48"
+                class="services__card-img"
+                loading="lazy"
+              />
+              <h2 class="base-title services__card-title">
+                Infrastructure management
+              </h2>
+              <p class="services__card-descr services__card-descr-third">
+                We monitor your services and keep them running 24/7
+              </p>
+              <a href="#requestForm">
+                <button class="base-btn services__btn" type="button">
+                  Send a request
+                </button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="founder" id="founder">
+      <div class="founder__content">
+        <div class="founder__animation-container"></div>
+        <div class="founder__wrapper">
+          <h1 class="base-title founder__section-header">Founder</h1>
+          <picture class="founder__img-box">
+            <source
+              srcset="src/resources/images/founder-page/founder@2X.webp"
+              type="image/webp"
+              class="founder__img"
+            />
+            <source
+              srcset="src/resources/images/founder-page/founder@1X.webp"
+              type="image/webp"
+              class="founder__img"
+            />
+            <img
+              src="src/resources/images/founder-page/founder@1X.jpg"
+              alt="Founder"
+              width="500"
+              heigth="419"
+              class="founder__img"
+              loading="lazy"
+            />
+          </picture>
+          <div class="founder__decorative-wrapper">
+            <img
+              src="src/resources/images/founder-page/Frame.svg"
+              width="291"
+              height="60"
+              class="founder__decorative-element"
+            />
+            <p class="founder__main-text">
+              Balazs, 20 years experience in cloud development, leader and
+              contributor of many projects with billions of users as a senior
+              Google
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback" id="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback__content">
+          <div class="feedback__contacts-info">
+            <h1 class="base-title feedback__section-header">Contacts</h1>
+            <a
+              href="mailto:1@dlux.services"
+              class="base-title base-link feedback__cont-email"
+              >1@dlux.services</a
+            >
+            <a
+              href="tel:+18143511265"
+              class="base-title base-link feedback__cont-phone"
+              >+18143511265</a
+            >
+          </div>
+          <form
+            action="#"
+            method="post"
+            id="requestForm"
+            class="feedback__form form"
+          >
+            <h2 class="base-title form__title">
+              Send <span class="green-part">a request</span>
+            </h2>
+            <div class="form__group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form__area"
+                placeholder=""
+              />
+              <label for="name" class="form__label">Name</label>
+            </div>
+            <div class="form__group">
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="form__area"
+                placeholder=""
+              />
+              <label for="company" class="form__label">Company</label>
+            </div>
+            <div class="form__group">
+              <input
+                type="tel"
+                id="tel"
+                name="phone"
+                class="form__area"
+                placeholder=""
+              />
+              <label for="tel" class="form__label">Callback phone number</label>
+            </div>
+            <div class="form__group">
+              <span class="form__area form__datepicker-toggle-area">
+                When is a good time to call
+                <span class="form__datepicker-toggle-button"></span>
+                <input
+                  type="date"
+                  id="dateInput"
+                  class="form__datepicker-input"
+                  name="calltime"
+                  required
+                />
+              </span>
+            </div>
+            <div class="form__group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__area"
+                placeholder=""
+              />
+              <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="form__group">
+              <textarea
+                id="textarea"
+                name="textarea"
+                rows="2"
+                class="form__area form__text-area"
+                placeholder=""
+              ></textarea>
+              <label for="textarea" class="form__textarea-label form__label"
+                >What can we help you with?</label
+              >
+            </div>
+            <div class="form__group form__select-wrapper">
+              <select
+                name="select"
+                id="select"
+                class="form__area form__select-area"
+              >
+                <option value="" disabled selected hidden>
+                  How did you find us?
+                </option>
+                <option value="1" class="form__select-option">
+                  Social media
+                </option>
+                <option value="2" class="form__select-option">TV</option>
+                <option value="3" class="form__select-option">
+                  From a friend
+                </option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="checkbox" class="form__checkbox-container">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  class="form__checkbox"
+                  checked
+                />
+                <span class="form__checkbox-custom"></span>
+                <span class="form__agreement"
+                  >I agree with the personal data processing policy</span
+                >
+              </label>
+            </div>
+            <button class="base-btn form__btn" type="submit">
+              Send a request
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__upper-part">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="base-link footer__nav-link" href="#about">About</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="base-link footer__nav-link" href="#services"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="base-link footer__nav-link" href="#founder"
+                  >Founder</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="base-link footer__nav-link" href="#feedback"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+            <div class="footer__socials-box">
+              <h1 class="footer__socials-header base-title">Social media</h1>
+              <ul class="footer__socials-list">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link"
+                    ><img
+                      src="src/resources/images/footer-page/facebook.svg"
+                      alt="fb icon"
+                      width="24"
+                      height="24"
+                      class="footer__icon"
+                      loading="lazy"
+                  /></a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link"
+                    ><img
+                      src="src/resources/images/footer-page/instagram.svg"
+                      alt="inst icon"
+                      width="24"
+                      height="24"
+                      class="footer__icon"
+                      loading="lazy"
+                  /></a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link"
+                    ><img
+                      src="src/resources/images/footer-page/twitter.svg"
+                      alt="tw icon"
+                      width="24"
+                      height="24"
+                      class="footer__icon"
+                      loading="lazy"
+                  /></a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link"
+                    ><img
+                      src="src/resources/images/footer-page/linkedin.svg"
+                      alt="in icon"
+                      width="24"
+                      height="24"
+                      class="footer__icon"
+                      loading="lazy"
+                  /></a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link"
+                    ><img
+                      src="src/resources/images/footer-page/telegram.svg"
+                      alt="tg icon"
+                      width="24"
+                      height="24"
+                      class="footer__icon"
+                      loading="lazy"
+                  /></a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link"
+                    ><img
+                      src="src/resources/images/footer-page/whatsapp.svg"
+                      alt="wp icon"
+                      width="24"
+                      height="24"
+                      class="footer__icon"
+                      loading="lazy"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__lower-part">
+            <a href="#">
+              <picture class="footer__logo-box">
+                <source
+                  srcset="src/resources/images/footer-page/logo-footer-img.webp"
+                  type="image/webp"
+                  class="footer__logo"
+                />
+                <img
+                  src="src/resources/images/footer-page/logo-footer-img.png"
+                  width="249"
+                  height="125"
+                  alt="Logo"
+                  class="footer__logo"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+            <p class="footer__main-text base-title">
+              20 years of high performance
+              <span class="green-part">cloud based development</span> experience
+            </p>
+            <ul class="footer__policy-terms">
+              <li class="footer__term">
+                <a class="base-link footer__term-link" href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="footer__term">
+                <a class="base-link footer__term-link" href="#"
+                  >Rules for the processing of personal data</a
+                >
+              </li>
+              <li class="footer__term">
+                <a class="base-link footer__term-link" href="#"
+                  >Website Terms of Use</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

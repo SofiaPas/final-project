@@ -1,0 +1,231 @@
+.footer {
+  background-color: rgba(8 29 49 / 100%);
+
+  &__wrapper {
+    width: 100%;
+    background-image: image-set(
+      url('/images/footer-page/symbol-white@1X.png') 1x,
+      url('/images/footer-page/symbol-white@2x.png') 2x,
+      url('/images/footer-page/symbol-white@1X.webp') 1x,
+      url('/images/footer-page/symbol-white@2x.webp') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: 65% 50%;
+  }
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__upper-part {
+    display: flex;
+    margin-bottom: 169px;
+    padding: 32px 30px 0;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 3vw;
+    justify-content: flex-start;
+    max-width: fit-content;
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__nav-item {
+    margin: 0;
+  }
+
+  &__socials-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: auto;
+  }
+
+  &__socials-header {
+    margin-left: auto;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &__socials-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0;
+    margin-top: 8px;
+    margin-left: auto;
+    padding: 0;
+    column-gap: 8px;
+    list-style: none;
+  }
+
+  &__social-item {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    place-items: center;
+
+    &:hover {
+      background-color: rgba(49 70 239 / 100%);
+    }
+
+    &:active {
+      background-color: rgba(49 40 239 / 100%);
+    }
+  }
+
+  &__icon {
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &__lower-part {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: auto;
+    padding-right: 30px;
+    padding-bottom: 32px;
+    padding-left: 30px;
+  }
+
+  &__logo-box {
+    display: inline-block;
+    width: 249px;
+    height: 125px;
+    margin-right: auto;
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__main-text {
+    max-width: 396px;
+    margin: 0;
+    margin-top: 27px;
+    padding-bottom: 26px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &__policy-terms {
+    margin: 0;
+    margin-top: 27px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__term {
+    margin-bottom: 8px;
+    line-height: 1.4;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__term-link {
+    color: var(--secondary-color);
+    font-family: var(--tertiary-font-fam);
+    text-decoration: underline;
+  }
+
+  @media only screen and (orientation: portrait) {
+    &__content {
+      min-width: 288px;
+      max-width: 60vw;
+    }
+
+    &__upper-part {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 52px;
+      padding-top: 16px;
+      padding-right: 16px;
+      padding-left: 16px;
+      column-gap: 88px;
+    }
+
+    &__nav-list {
+      flex-direction: column;
+      gap: unset;
+      margin-right: auto;
+    }
+
+    &__nav-item {
+      margin-bottom: 8px;
+    }
+
+    &__socials-header {
+      margin-left: 0;
+      font-size: 16px;
+    }
+
+    &__socials-list {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-left: auto;
+    }
+
+    &__social-item {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__icon {
+      max-width: 50%;
+      height: auto;
+    }
+
+    &__lower-part {
+      display: grid;
+      grid-template-rows: auto 109px auto;
+      grid-template-columns: 1fr;
+      margin-right: 16px;
+      margin-left: 16px;
+      padding: 0;
+    }
+
+    &__logo-box {
+      grid-row-start: 2;
+      width: 218px;
+      height: 109px;
+      margin-top: 0;
+    }
+
+    &__logo {
+      max-width: 218px;
+    }
+
+    &__main-text {
+      grid-row-start: 3;
+      grid-column-start: 1;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      padding-bottom: 0;
+    }
+
+    &__policy-terms {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      margin-top: 0;
+      margin-bottom: 51px;
+    }
+
+    &__term {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+}

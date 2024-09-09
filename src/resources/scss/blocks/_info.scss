@@ -1,0 +1,48 @@
+.info {
+  &__wrapper {
+    max-width: 80%;
+    margin: 0 auto 64px 30px;
+  }
+
+  &__main-header {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  &__header {
+    margin: 32px 0;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  &__block {
+    margin-bottom: 32px;
+  }
+
+  &__paragraph {
+    margin: 16px 0;
+    line-height: 1.3;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+  }
+
+  &__list-item {
+    margin: 8px 0;
+  }
+
+  @media only screen and (orientation: portrait) {
+    &__wrapper {
+      max-width: unset;
+      margin: 0 16px 64px;
+    }
+
+    &__main-header {
+      font-size: 24px;
+      line-height: 0.9;
+    }
+  }
+}
