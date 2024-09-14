@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Sofia Pasechnik" />
+    <script src="src/resources/js/app.ts" type="module"></script>
     <link rel="icon" href="src/resources/images/favicon-icon.png" />
     <link rel="stylesheet" href="src/resources/scss/style.scss" />
     <title>Final Project</title>
@@ -353,7 +354,9 @@
             <div class="form__group">
               <span class="form__area form__datepicker-toggle-area">
                 When is a good time to call
-                <span class="form__datepicker-toggle-button"></span>
+                <svg class="form__datepicker-toggle-button" width="24" height="24">
+                  {{ content | safe }}
+                </svg>
                 <input
                   type="date"
                   id="dateInput"
@@ -386,6 +389,9 @@
               >
             </div>
             <div class="form__group form__select-wrapper">
+              <svg class="form__select-caret" width="24" height="24">
+                {{ content | safe }}
+              </svg>
               <select
                 name="select"
                 id="select"
