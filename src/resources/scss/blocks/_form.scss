@@ -68,7 +68,6 @@
     left: 94%;
     width: 24px;
     height: 24px;
-    // background-image: url('/src/resources/images/feedback-page/Calendar_Week.svg');
   }
 
   &__datepicker-input {
@@ -117,15 +116,6 @@
   &__select-wrapper {
     position: relative;
     display: inline-block;
-
-    // &::after {
-    //   position: absolute;
-    //   top: 10%;
-    //   left: 95%;
-    //   content: url('/src/resources/images/feedback-page/Caret_Down.svg');
-    //   pointer-events: none;
-    //   outline: 1px solid red;
-    // }
   }
 
   &__select-caret {

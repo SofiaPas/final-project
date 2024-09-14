@@ -7,6 +7,7 @@
     <script src="src/resources/js/app.ts" type="module"></script>
     <link rel="icon" href="src/resources/images/favicon-icon.png" />
     <link rel="stylesheet" href="src/resources/scss/style.scss" />
+    {% import "sprite.njk" as sprite %}
     <title>Final Project</title>
   </head>
   <body class="body">
@@ -354,8 +355,12 @@
             <div class="form__group">
               <span class="form__area form__datepicker-toggle-area">
                 When is a good time to call
-                <svg class="form__datepicker-toggle-button" width="24" height="24">
-                  {{ content | safe }}
+                <svg
+                  class="form__datepicker-toggle-button"
+                  width="24"
+                  height="24"
+                >
+                  {{ sprite.svg('form1', 'Calendar_Week', 24, 24) }}
                 </svg>
                 <input
                   type="date"
@@ -390,7 +395,7 @@
             </div>
             <div class="form__group form__select-wrapper">
               <svg class="form__select-caret" width="24" height="24">
-                {{ content | safe }}
+                {{ sprite.svg('form2', 'Caret_Down', 24, 24) }}
               </svg>
               <select
                 name="select"
@@ -459,75 +464,51 @@
               <h1 class="footer__socials-header base-title">Social media</h1>
               <ul class="footer__socials-list">
                 <li class="footer__social-item">
-                  <a href="#" class="footer__social-link"
-                    ><img
-                      src="src/resources/images/footer-page/facebook.svg"
-                      alt="fb icon"
-                      width="24"
-                      height="24"
-                      class="footer__icon"
-                      loading="lazy"
-                  /></a>
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social1', 'facebook', 24, 24) }}
+                    </svg>
+                  </a>
                 </li>
 
                 <li class="footer__social-item">
-                  <a href="#" class="footer__social-link"
-                    ><img
-                      src="src/resources/images/footer-page/instagram.svg"
-                      alt="inst icon"
-                      width="24"
-                      height="24"
-                      class="footer__icon"
-                      loading="lazy"
-                  /></a>
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social2', 'instagram', 24, 24) }}
+                    </svg>
+                  </a>
                 </li>
 
                 <li class="footer__social-item">
-                  <a href="#" class="footer__social-link"
-                    ><img
-                      src="src/resources/images/footer-page/twitter.svg"
-                      alt="tw icon"
-                      width="24"
-                      height="24"
-                      class="footer__icon"
-                      loading="lazy"
-                  /></a>
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social3', 'twitter', 24, 24) }}
+                    </svg>
+                  </a>
                 </li>
 
                 <li class="footer__social-item">
-                  <a href="#" class="footer__social-link"
-                    ><img
-                      src="src/resources/images/footer-page/linkedin.svg"
-                      alt="in icon"
-                      width="24"
-                      height="24"
-                      class="footer__icon"
-                      loading="lazy"
-                  /></a>
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social4', 'linkedin', 24, 24) }}
+                    </svg>
+                  </a>
                 </li>
 
                 <li class="footer__social-item">
-                  <a href="#" class="footer__social-link"
-                    ><img
-                      src="src/resources/images/footer-page/telegram.svg"
-                      alt="tg icon"
-                      width="24"
-                      height="24"
-                      class="footer__icon"
-                      loading="lazy"
-                  /></a>
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social5', 'telegram', 24, 24) }}
+                    </svg>
+                  </a>
                 </li>
 
                 <li class="footer__social-item">
-                  <a href="#" class="footer__social-link"
-                    ><img
-                      src="src/resources/images/footer-page/whatsapp.svg"
-                      alt="wp icon"
-                      width="24"
-                      height="24"
-                      class="footer__icon"
-                      loading="lazy"
-                  /></a>
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social6', 'whatsapp', 24, 24) }}
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
