@@ -4,3 +4,5 @@ node_modules
 _site
 
 public/sprites
+
+.DS_Store
