@@ -62,7 +62,7 @@
     }
   }
 
-  @media only screen and (max-width: 640px) {
+  @media (width <= 640px) {
     &__section-header {
       display: none;
     }

@@ -140,7 +140,7 @@
     text-decoration: underline;
   }
 
-  @media only screen and (max-width: 640px) {
+  @media (width <= 640px) {
     &__content {
       width: clamp(288px, 70vw, 530px);
     }
