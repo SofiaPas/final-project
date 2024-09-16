@@ -9,8 +9,8 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: auto auto;
     gap: clamp(16px, 2.5vw, 30px);
-    margin-right: clamp(16px, 2.5vw, 30px);
-    margin-left: clamp(16px, 2.5vw, 30px);
+    margin-right: clamp(16px, 2vw, 30px);
+    margin-left: clamp(16px, 2vw, 30px);
   }
 
   &__animation-container {
@@ -64,14 +64,13 @@
     margin-left: clamp(100px, 17vw, 200px);
   }
 
-  @media only screen and (orientation: portrait) {
+  @media only screen and (max-width: 640px) {
     &__decorative-element {
       display: none;
     }
 
     &__content {
-      min-width: 288px;
-      max-width: 60vw;
+      width: clamp(288px, 60vw, 703px);
       margin: 0 auto;
     }
 

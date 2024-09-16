@@ -2,12 +2,12 @@
   &__wrapper {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: image-set(
-      url('/src/resources/images/head-page/hero-img@1X.jpg') 1x,
-      url('/src/resources/images/head-page/hero-img@2X.jpg') 2x,
-      url('/src/resources/images/head-page/hero-img@1X.webp') 1x,
-      url('/src/resources/images/head-page/hero-img@2X.webp') 2x
+      url('/src/resources/images/head-page/hero@1X.jpg') 1x,
+      url('/src/resources/images/head-page/hero@2X.jpg') 2x,
+      url('/src/resources/images/head-page/hero@1X.webp') 1x,
+      url('/src/resources/images/head-page/hero@2X.webp') 2x
     );
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +35,7 @@
   &__main-menu {
     display: flex;
     margin-right: 30px;
-    margin-bottom: 121px;
+    margin-bottom: 15%;
     margin-left: 30px;
     padding-top: 8px;
   }
@@ -43,6 +43,7 @@
   &__logo-box {
     display: inline-block;
     width: 159px;
+    max-width: 100%;
     height: 104px;
     margin-top: 8px;
   }
@@ -66,7 +67,7 @@
 
   &__nav-list {
     display: flex;
-    gap: 3vw;
+    gap: clamp(1em, 3vw, 2.5em);
     justify-content: space-between;
     margin: 0;
     margin-left: auto;
@@ -88,6 +89,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    max-width: fit-content;
   }
 
   &__title {
@@ -140,13 +142,12 @@
     margin-top: 32px;
   }
 
-  @media only screen and (orientation: portrait) {
+  @media only screen and (max-width: 600px) {
     &__content {
       display: grid;
       grid-template-rows: repeat(1, auto 1fr);
       grid-template-columns: 1fr;
       min-width: 288px;
-      max-width: 80vw;
     }
 
     &__img-container {
@@ -155,7 +156,7 @@
 
     &__main-menu {
       margin-right: 0;
-      margin-bottom: 221px;
+      margin-bottom: 30%;
       margin-left: 0;
       padding-right: 16px;
       padding-left: 16px;
@@ -163,12 +164,14 @@
 
     &__logo-box {
       width: 114px;
+      max-width: 30vw;
       height: 75px;
     }
 
     &__navbar {
       flex-direction: column;
       height: 159px;
+      height: auto;
       margin-top: 0;
     }
 
@@ -184,8 +187,12 @@
     }
 
     &__nav-list {
+      position: absolute;
+      top: 35px;
+      right: 20px;
       display: none;
       flex-direction: column;
+      margin-left: unset;
       gap: unset;
       align-items: flex-end;
       width: 70px;
@@ -200,7 +207,11 @@
     }
 
     &__lower-part {
-      margin: 0 auto;
+      margin: 0;
+      margin-right: clamp(0px, 0.4rem, 20px);
+      margin-left: clamp(0px, 0.4rem, 20px);
+      justify-self: center;
+      max-width: min-content;
     }
 
     &__title {

@@ -4,10 +4,10 @@
   &__wrapper {
     width: 100%;
     background-image: image-set(
-      url('/images/footer-page/symbol-white@1X.png') 1x,
-      url('/images/footer-page/symbol-white@2x.png') 2x,
-      url('/images/footer-page/symbol-white@1X.webp') 1x,
-      url('/images/footer-page/symbol-white@2x.webp') 2x
+      url('/src/resources/images/footer-page/symbol-white@1X.png') 1x,
+      url('/src/resources/images/footer-page/symbol-white@2x.png') 2x,
+      url('/src/resources/images/footer-page/symbol-white@1X.webp') 1x,
+      url('/src/resources/images/footer-page/symbol-white@2x.webp') 2x
     );
     background-repeat: no-repeat;
     background-position: 65% 50%;
@@ -26,7 +26,7 @@
 
   &__nav-list {
     display: flex;
-    gap: 3vw;
+    gap: clamp(1em, 3vw, 2.5em);
     justify-content: flex-start;
     max-width: fit-content;
     margin: 0;
@@ -140,10 +140,9 @@
     text-decoration: underline;
   }
 
-  @media only screen and (orientation: portrait) {
+  @media only screen and (max-width: 640px) {
     &__content {
-      min-width: 288px;
-      max-width: 60vw;
+      width: clamp(288px, 70vw, 530px);
     }
 
     &__upper-part {

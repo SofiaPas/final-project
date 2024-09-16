@@ -7,11 +7,12 @@
 .about {
   --anim-width: clamp(500px, 85vw, 1139px);
   --anim-height: calc(var(--anim-width) / 3.14);
-  --anim-mob-width: clamp(288px, 40vw, 650px);
+  --anim-mob-width: clamp(260px, 70vw, 650px);
   --anim-mob-height: calc(var(--anim-mob-width) / 1.8);
 
   &__content {
     display: grid;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -95,7 +96,7 @@
     position: relative;
     grid-row: 1/-1;
     grid-column: 2;
-    width: clamp(260px, 39vw, 550px);
+    width: clamp(200px, 32vw, 585px);
   }
 
   &__decor-element {
@@ -127,7 +128,7 @@
   &__main-text {
     grid-row: 2;
     grid-column: 1/-1;
-    max-width: 40vw;
+    width: clamp(260px, 40vw, 40rem);
     margin: 0;
     margin-left: 124px;
   }
@@ -142,14 +143,15 @@
     margin-left: 124px;
   }
 
-  @media only screen and (orientation: portrait) {
+
+  @media only screen and (max-width: 640px) {
     &__content {
       min-width: 288px;
       max-width: 60vw;
     }
 
     &__image-container {
-      width: clamp(288px, 65vw, 650px);
+      width: var(--anim-mob-width);
       height: var(--anim-mob-height);
       margin-top: 56px;
     }
@@ -166,7 +168,7 @@
 
     &__decor-element {
       top: -50px;
-      left: 10px;
+      left: 5px;
     }
 
     &__decor-element:nth-child(2) {
@@ -182,7 +184,7 @@
 
     &__main-text {
       grid-column: 1/-1;
-      max-width: fit-content;
+      width: clamp(260px, 40vw, 30rem);
       margin: 0;
     }
 

@@ -48,7 +48,7 @@
     position: relative;
     display: flex;
     gap: 8px;
-    margin: 36px 2.5vw 99px;
+    margin: 36px 1rem 99px;
     padding: 0;
     list-style: none;
   }
@@ -109,7 +109,7 @@
   @container (width <= 750px) {
     &__wrapper {
       margin-bottom: -180px;
-      column-gap: 10vw;
+      column-gap: clamp(60px, 10vw, 80px);
     }
 
     &__section-header {
@@ -125,7 +125,7 @@
     }
   }
 
-  @media only screen and (orientation: portrait) {
+  @media only screen and (max-width: 640px) {
     &__content {
       max-width: fit-content;
       margin: 0 auto;
@@ -166,8 +166,7 @@
     &__card-box {
       align-self: center;
       width: 100%;
-      min-width: 288px;
-      max-width: 60vw;
+      width: clamp(288px, 60vw, 705px);
 
       &:nth-child(2) {
         z-index: unset;
