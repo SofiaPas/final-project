@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sofia Pasechnik" />
+    <script src="src/resources/js/app.ts" type="module"></script>
+    <link rel="icon" href="src/resources/images/favicon-icon.png" />
+    <link rel="stylesheet" href="src/resources/scss/style.scss" />
+    <title>Final Project</title>
+  </head>
+  <body class="body">
+    <section class="header">
+      <div class="header__wrapper">
+        <div class="header__content">
+          <div class="header__main-menu">
+            <a href="#">
+              <picture class="header__logo-box">
+                <source
+                  srcset="src/resources/images/head-page/logo-img.webp"
+                  type="image/webp"
+                  class="header__logo"
+                />
+                <img
+                  src="src/resources/images/head-page/logo-img.png"
+                  alt="Logo"
+                  width="159"
+                  height="104"
+                  loading="eager"
+                  class="header__logo"
+                />
+              </picture>
+            </a>
+            <nav class="header__navbar">
+              <input
+                type="checkbox"
+                id="nav-list-toggle"
+                class="header__nav-list_checkbox"
+              />
+              <label for="nav-list-toggle" class="header__nav-toggle">
+                ☰
+              </label>
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a class="base-link header__nav-link" href="/#about">About</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="base-link header__nav-link" href="/#services"
+                    >Services</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a class="base-link header__nav-link" href="/#founder"
+                    >Founder</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a class="base-link header__nav-link" href="/#feedback"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__lower-part">
+            <h1 class="base-title header__title">Cloud software development</h1>
+            <div class="header__features-block">
+              <img
+                src="src/resources/images/head-page/check-mark.svg"
+                alt="check-mark"
+                width="24"
+                height="24"
+                class="header__check-mark"
+              />
+              <img
+                src="src/resources/images/head-page/check-mark.svg"
+                alt="check-mark"
+                width="24"
+                height="24"
+                class="header__check-mark"
+              />
+              <img
+                src="src/resources/images/head-page/check-mark.svg"
+                alt="check-mark"
+                width="24"
+                height="24"
+                class="header__check-mark"
+              />
+              <ul class="header__features-list">
+                <li class="header__feature-item">
+                  Websites, mobile applications
+                </li>
+                <li class="header__feature-item">Remote development teams</li>
+                <li class="header__feature-item">
+                  Cloud Infrastructure Management
+                </li>
+              </ul>
+            </div>
+            <a href="#requestForm">
+              <button class="base-btn header__btn" type="button">
+                Send a request
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>{{ content | safe }}</main>
+
+    <section class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__upper-part">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="base-link footer__nav-link" href="/#about">About</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="base-link footer__nav-link" href="/#services"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="base-link footer__nav-link" href="/#founder"
+                  >Founder</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="base-link footer__nav-link" href="/#feedback"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+            <div class="footer__socials-box">
+              <h1 class="footer__socials-header base-title">Social media</h1>
+              <ul class="footer__socials-list">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social1', 'facebook', 24, 24) }}
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social2', 'instagram', 24, 24) }}
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social3', 'twitter', 24, 24) }}
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social4', 'linkedin', 24, 24) }}
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social5', 'telegram', 24, 24) }}
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                    <svg class="footer__icon" width="24" height="24">
+                      {{ sprite.svg('social6', 'whatsapp', 24, 24) }}
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__lower-part">
+            <a href="#">
+              <picture class="footer__logo-box">
+                <source
+                  srcset="src/resources/images/footer-page/logo-footer-img.webp"
+                  type="image/webp"
+                  class="footer__logo"
+                />
+                <img
+                  src="src/resources/images/footer-page/logo-footer-img.png"
+                  width="249"
+                  height="125"
+                  alt="Logo"
+                  class="footer__logo"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+            <p class="footer__main-text base-title">
+              20 years of high performance
+              <span class="green-part">cloud based development</span> experience
+            </p>
+            <ul class="footer__policy-terms">
+              <li class="footer__term">
+                <a
+                  class="base-link footer__term-link"
+                  href="/privacy-policy.njk"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="footer__term">
+                <a
+                  class="base-link footer__term-link"
+                  href="/privacy-policy.njk"
+                  >Rules for the processing of personal data</a
+                >
+              </li>
+              <li class="footer__term">
+                <a
+                  class="base-link footer__term-link"
+                  href="/privacy-policy.njk"
+                  >Website Terms of Use</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
