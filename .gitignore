@@ -5,6 +5,4 @@ _site
 
 public/sprites
 
-# .DS_Store
-
-src/resources/images/.DS_Store
+.DS_Store
