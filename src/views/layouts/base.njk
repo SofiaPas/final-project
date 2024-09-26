@@ -11,105 +11,106 @@
     <title>Final Project</title>
   </head>
   <body class="body">
-    <section class="header">
-      <div class="header__wrapper">
-        <div class="header__content">
-          <div class="header__main-menu">
-            <a href="/">
-              <picture class="header__logo-box">
-                <source
-                  srcset="src/resources/images/head-page/logo-img.webp"
-                  type="image/webp"
-                  class="header__logo"
-                />
-                <img
-                  src="src/resources/images/head-page/logo-img.png"
-                  alt="Logo"
-                  width="159"
-                  height="104"
-                  loading="eager"
-                  class="header__logo"
-                />
-              </picture>
-            </a>
-            <nav class="header__navbar">
-              <input
-                type="checkbox"
-                id="nav-list-toggle"
-                class="header__nav-list_checkbox"
-              />
-              <label for="nav-list-toggle" class="header__nav-toggle">
-                ☰
-              </label>
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <a class="base-link header__nav-link" href="/#about">About</a>
-                </li>
-                <li class="header__nav-item">
-                  <a class="base-link header__nav-link" href="/#services"
-                    >Services</a
-                  >
-                </li>
-                <li class="header__nav-item">
-                  <a class="base-link header__nav-link" href="/#founder"
-                    >Founder</a
-                  >
-                </li>
-                <li class="header__nav-item">
-                  <a class="base-link header__nav-link" href="/#feedback"
-                    >Contacts</a
-                  >
-                </li>
-              </ul>
-            </nav>
+    <header>
+      <picture class="header__hero-box">
+        <source
+          srcset="src/resources/images/head-page/hero@2X.webp"
+          type="image/webp"
+          class="header__hero"
+        />
+        <source
+          srcset="src/resources/images/head-page/hero@1X.webp"
+          type="image/webp"
+          class="header__hero"
+        />
+        <img
+          src="src/resources/images/head-page/hero@1X.jpg"
+          alt="hero-img"
+          width="1000"
+          heigth="600"
+          class="header__hero"
+        />
+      </picture>
+      <div class="header__content">
+        <div class="header__main-menu">
+          <a href="/">
+            <svg class="header__logo" width="159" height="104">
+              {{ sprite.svg('common', 'logo-header', 159, 104) }}
+            </svg>
+          </a>
+          <nav class="header__navbar">
+            <input
+              type="checkbox"
+              id="nav-list-toggle"
+              class="header__nav-list_checkbox"
+            />
+            <label for="nav-list-toggle" class="header__nav-toggle">☰</label>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="base-link header__nav-link" href="/#about">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="base-link header__nav-link" href="/#services"
+                  >Services</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a class="base-link header__nav-link" href="/#founder"
+                  >Founder</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a class="base-link header__nav-link" href="/#feedback"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__lower-part">
+          <h1 class="base-title header__title">Cloud software development</h1>
+          <div class="header__features-block">
+            <img
+              src="src/resources/images/head-page/check-mark.svg"
+              alt="check-mark"
+              width="24"
+              height="24"
+              class="header__check-mark"
+            />
+            <img
+              src="src/resources/images/head-page/check-mark.svg"
+              alt="check-mark"
+              width="24"
+              height="24"
+              class="header__check-mark"
+            />
+            <img
+              src="src/resources/images/head-page/check-mark.svg"
+              alt="check-mark"
+              width="24"
+              height="24"
+              class="header__check-mark"
+            />
+            <ul class="header__features-list">
+              <li class="header__feature-item">
+                Websites, mobile applications
+              </li>
+              <li class="header__feature-item">Remote development teams</li>
+              <li class="header__feature-item">
+                Cloud Infrastructure Management
+              </li>
+            </ul>
           </div>
-          <div class="header__lower-part">
-            <h1 class="base-title header__title">Cloud software development</h1>
-            <div class="header__features-block">
-              <img
-                src="src/resources/images/head-page/check-mark.svg"
-                alt="check-mark"
-                width="24"
-                height="24"
-                class="header__check-mark"
-              />
-              <img
-                src="src/resources/images/head-page/check-mark.svg"
-                alt="check-mark"
-                width="24"
-                height="24"
-                class="header__check-mark"
-              />
-              <img
-                src="src/resources/images/head-page/check-mark.svg"
-                alt="check-mark"
-                width="24"
-                height="24"
-                class="header__check-mark"
-              />
-              <ul class="header__features-list">
-                <li class="header__feature-item">
-                  Websites, mobile applications
-                </li>
-                <li class="header__feature-item">Remote development teams</li>
-                <li class="header__feature-item">
-                  Cloud Infrastructure Management
-                </li>
-              </ul>
-            </div>
-            <a href="#requestForm">
-              <button class="base-btn header__btn" type="button">
-                Send a request
-              </button>
-            </a>
-          </div>
+          <a href="/#requestForm" class="base-btn header__btn">
+            Send a request
+          </a>
         </div>
       </div>
-    </section>
+    </header>
 
     <main>{{ content | safe }}</main>
 
-    <section class="footer">
+    <footer>
       <div class="footer__wrapper">
         <div class="footer__content">
           <div class="footer__upper-part">
@@ -134,12 +135,12 @@
               </li>
             </ul>
             <div class="footer__socials-box">
-              <h1 class="footer__socials-header base-title">Social media</h1>
+              <h2 class="footer__socials-header base-title">Social media</h2>
               <ul class="footer__socials-list">
                 <li class="footer__social-item">
                   <a href="#" class="footer__social-link">
                     <svg class="footer__icon" width="24" height="24">
-                      {{ sprite.svg('social1', 'facebook', 24, 24) }}
+                      {{ sprite.svg('social', 'facebook', 24, 24) }}
                     </svg>
                   </a>
                 </li>
@@ -147,7 +148,7 @@
                 <li class="footer__social-item">
                   <a href="#" class="footer__social-link">
                     <svg class="footer__icon" width="24" height="24">
-                      {{ sprite.svg('social2', 'instagram', 24, 24) }}
+                      {{ sprite.svg('social', 'instagram', 24, 24) }}
                     </svg>
                   </a>
                 </li>
@@ -155,7 +156,7 @@
                 <li class="footer__social-item">
                   <a href="#" class="footer__social-link">
                     <svg class="footer__icon" width="24" height="24">
-                      {{ sprite.svg('social3', 'twitter', 24, 24) }}
+                      {{ sprite.svg('social', 'twitter', 24, 24) }}
                     </svg>
                   </a>
                 </li>
@@ -163,7 +164,7 @@
                 <li class="footer__social-item">
                   <a href="#" class="footer__social-link">
                     <svg class="footer__icon" width="24" height="24">
-                      {{ sprite.svg('social4', 'linkedin', 24, 24) }}
+                      {{ sprite.svg('social', 'linkedin', 24, 24) }}
                     </svg>
                   </a>
                 </li>
@@ -171,7 +172,7 @@
                 <li class="footer__social-item">
                   <a href="#" class="footer__social-link">
                     <svg class="footer__icon" width="24" height="24">
-                      {{ sprite.svg('social5', 'telegram', 24, 24) }}
+                      {{ sprite.svg('social', 'telegram', 24, 24) }}
                     </svg>
                   </a>
                 </li>
@@ -179,7 +180,7 @@
                 <li class="footer__social-item">
                   <a href="#" class="footer__social-link">
                     <svg class="footer__icon" width="24" height="24">
-                      {{ sprite.svg('social6', 'whatsapp', 24, 24) }}
+                      {{ sprite.svg('social', 'whatsapp', 24, 24) }}
                     </svg>
                   </a>
                 </li>
@@ -188,21 +189,9 @@
           </div>
           <div class="footer__lower-part">
             <a href="/">
-              <picture class="footer__logo-box">
-                <source
-                  srcset="src/resources/images/footer-page/logo-footer-img.webp"
-                  type="image/webp"
-                  class="footer__logo"
-                />
-                <img
-                  src="src/resources/images/footer-page/logo-footer-img.png"
-                  width="249"
-                  height="125"
-                  alt="Logo"
-                  class="footer__logo"
-                  loading="lazy"
-                />
-              </picture>
+              <svg class="footer__logo" width="249" height="125">
+                {{ sprite.svg('common', 'logo-footer', 249, 125) }}
+              </svg>
             </a>
             <p class="footer__main-text base-title">
               20 years of high performance
@@ -234,6 +223,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

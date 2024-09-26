@@ -11,19 +11,17 @@ layout: "base.njk"
       <div class="about__image"></div>
     </div>
     <div class="about__wrapper">
-      <h1 class="base-title about__title">
+      <h2 class="base-title about__title">
         Basic marketing information
         <span class="green-part">about the company</span>
-      </h1>
+      </h2>
       <p class="about__main-text">
         Basic marketing info about the company: We deliver customized cloud
         based solutions for your ideas. 20 years of high performance cloud based
         development experience (that’s my experience incl. Google and Gemini).
       </p>
-      <a href="#requestForm" class="about__btn-container">
-        <button class="base-btn about__btn" type="button">
-          Send a request
-        </button>
+      <a href="#requestForm" class="about__btn-container base-btn about__btn">
+        Send a request
       </a>
       <picture class="about__decor-wrapper">
         <source
@@ -55,7 +53,7 @@ layout: "base.njk"
   <div class="services__content">
     <div class="services__animation-container"></div>
     <div class="services__wrapper">
-      <h1 class="base-title services__section-header">Services</h1>
+      <h2 class="base-title services__section-header">Services</h2>
       <picture class="services__decor-wrapper">
         <source
           srcset="src/resources/images/services-page/frame-mobile.svg"
@@ -83,18 +81,16 @@ layout: "base.njk"
             class="services__card-img"
             loading="lazy"
           />
-          <h2 class="base-title services__card-title">
+          <h3 class="base-title services__card-title">
             Cloud based development
-          </h2>
+          </h3>
           <p class="services__card-descr">
             Develop an app for your project: web and mobile apps for your custom
             business needs on Amazon Web Services, Google Cloud Platform or your
             private cloud.
           </p>
-          <a href="#requestForm">
-            <button class="base-btn services__btn" type="button">
-              Send a request
-            </button>
+          <a href="#requestForm" class="base-btn services__btn">
+            Send a request
           </a>
         </div>
       </li>
@@ -109,18 +105,16 @@ layout: "base.njk"
             class="services__card-img"
             loading="lazy"
           />
-          <h2 class="base-title services__card-title">
+          <h3 class="base-title services__card-title">
             Remote development teams
-          </h2>
+          </h3>
           <p class="services__card-descr">
             Manage and improve your services with a dedicated development team
             that covers all functions. You only need to define the tasks and
             priorities, we are doing the rest.
           </p>
-          <a href="#requestForm">
-            <button class="base-btn services__btn" type="button">
-              Send a request
-            </button>
+          <a href="#requestForm" class="base-btn services__btn">
+            Send a request
           </a>
         </div>
       </li>
@@ -135,16 +129,14 @@ layout: "base.njk"
             class="services__card-img"
             loading="lazy"
           />
-          <h2 class="base-title services__card-title">
+          <h3 class="base-title services__card-title">
             Infrastructure management
-          </h2>
+          </h3>
           <p class="services__card-descr services__card-descr-third">
             We monitor your services and keep them running 24/7
           </p>
-          <a href="#requestForm">
-            <button class="base-btn services__btn" type="button">
-              Send a request
-            </button>
+          <a href="#requestForm" class="base-btn services__btn">
+            Send a request
           </a>
         </div>
       </li>
@@ -156,7 +148,7 @@ layout: "base.njk"
   <div class="founder__content">
     <div class="founder__animation-container"></div>
     <div class="founder__wrapper">
-      <h1 class="base-title founder__section-header">Founder</h1>
+      <h2 class="base-title founder__section-header">Founder</h2>
       <picture class="founder__img-box">
         <source
           srcset="src/resources/images/founder-page/founder@2X.webp"
@@ -197,7 +189,7 @@ layout: "base.njk"
   <div class="feedback__wrapper">
     <div class="feedback__content">
       <div class="feedback__contacts-info">
-        <h1 class="base-title feedback__section-header">Contacts</h1>
+        <h2 class="base-title feedback__section-header">Contacts</h2>
         <a
           href="mailto:1@dlux.services"
           class="base-title base-link feedback__cont-email"
@@ -215,9 +207,9 @@ layout: "base.njk"
         id="requestForm"
         class="feedback__form form"
       >
-        <h2 class="base-title form__title">
+        <h3 class="base-title form__title">
           Send <span class="green-part">a request</span>
-        </h2>
+        </h3>
         <div class="form__group">
           <input
             type="text"
@@ -252,7 +244,7 @@ layout: "base.njk"
           <span class="form__area form__datepicker-toggle-area">
             When is a good time to call
             <svg class="form__datepicker-toggle-button" width="24" height="24">
-              {{ sprite.svg('form1', 'Calendar_Week', 24, 24) }}
+              {{ sprite.svg('common', 'Calendar_Week', 24, 24) }}
             </svg>
             <input
               type="date"
@@ -287,7 +279,7 @@ layout: "base.njk"
         </div>
         <div class="form__group form__select-wrapper">
           <svg class="form__select-caret" width="24" height="24">
-            {{ sprite.svg('form2', 'Caret_Down', 24, 24) }}
+            {{ sprite.svg('common', 'Caret_Down', 24, 24) }}
           </svg>
           <select
             name="select"

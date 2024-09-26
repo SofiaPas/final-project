@@ -5,6 +5,8 @@
 }
 
 .about {
+  container-type: inline-size;
+
   --anim-width: clamp(500px, 85vw, 1139px);
   --anim-height: calc(var(--anim-width) / 3.14);
   --anim-mob-width: clamp(260px, 70vw, 650px);
@@ -139,8 +141,10 @@
   }
 
   &__btn {
+    max-width: fit-content;
     margin-top: 8px;
     margin-left: 124px;
+    text-decoration: none;
   }
 
   @media (width <= 640px) {
@@ -193,6 +197,13 @@
 
     &__btn {
       margin: 0;
+    }
+  }
+
+  @container (width <= 410px) {
+    &__btn {
+      max-width: unset;
+      margin: 0 10px;
     }
   }
 }
