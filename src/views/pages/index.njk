@@ -5,6 +5,37 @@ layout: "base.njk"
 
 {% import "sprite.njk" as sprite %}
 
+<section class="hero">
+  <picture class="hero__img-box">
+    <source
+      srcset="src/resources/images/head-page/hero@2X.webp"
+      type="image/webp"
+      class="hero__img"
+    />
+    <source
+      srcset="src/resources/images/head-page/hero@1X.webp"
+      type="image/webp"
+      class="hero__img"
+    />
+    <img
+      src="src/resources/images/head-page/hero@1X.jpg"
+      alt="hero-img"
+      width="1000"
+      heigth="600"
+      class="hero__img"
+    />
+  </picture>
+  <div class="hero__content">
+    <h1 class="base-title hero__title">Cloud software development</h1>
+    <ul class="hero__features-list">
+      <li class="hero__feature-item">Websites, mobile applications</li>
+      <li class="hero__feature-item">Remote development teams</li>
+      <li class="hero__feature-item">Cloud Infrastructure Management</li>
+    </ul>
+    <a href="/#requestForm" class="base-btn hero__btn"> Send a request </a>
+  </div>
+</section>
+
 <section class="about" id="about">
   <div class="about__content">
     <div class="about__image-container">
