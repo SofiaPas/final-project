@@ -1,7 +1,21 @@
 .founder {
   &__content {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      display: block;
+      width: 80px;
+      height: 288px;
+      background-color: rgba(102 221 141 / 100%);
+      border-radius: 50% 0 0 50%;
+      filter: blur(110px);
+      content: '';
+    }
   }
 
   &__wrapper {
@@ -11,17 +25,6 @@
     gap: clamp(16px, 2.5vw, 30px);
     margin-right: clamp(16px, 2vw, 30px);
     margin-left: clamp(16px, 2vw, 30px);
-  }
-
-  &__animation-container {
-    position: absolute;
-    right: 0;
-    display: block;
-    width: 80px;
-    height: 288px;
-    background-color: rgba(102 221 141 / 100%);
-    border-radius: 50% 0 0 50%;
-    filter: blur(110px);
   }
 
   &__section-header {

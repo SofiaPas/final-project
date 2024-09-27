@@ -4,18 +4,19 @@
   &__content {
     max-width: 1200px;
     margin: 0 auto;
-  }
 
-  &__animation-container {
-    position: absolute;
-    top: -80px;
-    left: -210px;
-    display: block;
-    width: 288px;
-    height: 288px;
-    background-color: rgba(102 221 141 / 50%);
-    border-radius: 50%;
-    filter: blur(100px);
+    &::before {
+      position: absolute;
+      top: -50px;
+      left: -150px;
+      display: block;
+      width: 288px;
+      height: 288px;
+      background-color: rgba(102 221 141 / 50%);
+      border-radius: 50%;
+      filter: blur(100px);
+      content: '';
+    }
   }
 
   &__wrapper {
