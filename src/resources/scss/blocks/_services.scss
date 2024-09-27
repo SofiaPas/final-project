@@ -2,7 +2,6 @@
   container-type: inline-size;
 
   &__content {
-    position: relative;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -112,7 +111,7 @@
     text-wrap: nowrap;
   }
 
-  @container (width <= 750px) {
+  @container (width <= 850px) {
     &__wrapper {
       margin-bottom: -180px;
       column-gap: clamp(60px, 10vw, 80px);
