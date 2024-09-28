@@ -2,6 +2,7 @@
   container-type: inline-size;
 
   &__content {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -28,11 +29,12 @@
     top: -85px;
     display: grid;
     grid-template-columns: 1fr auto;
-    column-gap: 90px;
+    column-gap: clamp(20px, 6vw, 100px);
   }
 
   &__decor-wrapper {
-    width: clamp(300px, 40vw, 550px);
+    position: relative;
+    width: clamp(250px, 40vw, 550px);
     padding-top: 30px;
   }
 
@@ -52,7 +54,7 @@
   &__serv-list {
     position: relative;
     display: flex;
-    gap: 8px;
+    gap: 5px;
     margin: 36px 1rem 99px;
     padding: 0;
     list-style: none;
@@ -111,10 +113,10 @@
     text-wrap: nowrap;
   }
 
-  @container (width <= 850px) {
+  @container (width <= 890px) {
     &__wrapper {
       margin-bottom: -180px;
-      column-gap: clamp(60px, 10vw, 80px);
+      column-gap: clamp(30px, 10vw, 150px);
     }
 
     &__section-header {
@@ -130,7 +132,7 @@
     }
   }
 
-  @media (width <= 640px) {
+  @media (width <= 670px) {
     &__content {
       max-width: fit-content;
       margin: 0 auto;
