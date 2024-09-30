@@ -1,0 +1,30 @@
+.sphere {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    width: 288px;
+    height: 288px;
+    background-color: rgba(102 221 141 / 50%);
+    border-radius: 50%;
+    filter: blur(100px);
+    content: '';
+  }
+
+  &_position {
+    &_left {
+      &::before {
+        top: -50px;
+        left: -150px;
+      }
+    }
+
+    &_right {
+      &::before {
+        top: 50px;
+        right: 0;
+      }
+    }
+  }
+}
